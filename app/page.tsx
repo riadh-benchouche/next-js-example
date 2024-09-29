@@ -16,7 +16,7 @@ export default function Page() {
                 brûler la rétine en conquérant le monde du code, non ?`}
             </p>
             <div className="my-8">
-                <BlogPosts />
+                <BlogPosts isHome={true} />
             </div>
             <div className="my-8">
                 <Newsletter />

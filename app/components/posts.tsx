@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import {formatDate, getBlogPosts} from 'app/blog/utils'
 
-export function BlogPosts() {
-    let allBlogs = getBlogPosts().slice(0, 3)
+export function BlogPosts({isHome = false}: { isHome?: boolean }) {
+    let allBlogs = getBlogPosts()
+    if (isHome) {
+        allBlogs = allBlogs.slice(0, 2)
+    }
 
     return (
         <div>
