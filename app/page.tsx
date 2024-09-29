@@ -1,24 +1,25 @@
-import {BlogPosts} from 'app/components/posts'
+import { BlogPosts } from 'app/components/posts';
 import Newsletter from "./components/newsletter";
 
 export default function Page() {
     return (
         <section>
             <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-                My Portfolio
+                Mon Blog Extraordinaire 🚀
             </h1>
             <p className="mb-4">
-                {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+                {`Bienvenue dans mon antre numérique ! Fidèle chevalier de Vim et
+                grand défenseur des onglets, je maîtrise l'art du code à chaque
+                pression de touche. Qui a besoin d'une souris, sérieusement ? Le typage
+                statique ? Oh oui, je me prosterne devant sa gloire de détection
+                d'erreurs ! Et parlons du mode sombre – parce que personne ne veut se
+                brûler la rétine en conquérant le monde du code, non ?`}
             </p>
             <div className="my-8">
-                <BlogPosts/>
+                <BlogPosts />
             </div>
             <div className="my-8">
-                <Newsletter/>
+                <Newsletter />
             </div>
         </section>
     )
